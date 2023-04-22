@@ -7,7 +7,7 @@ In my local computer I can not connect to db. At first I thought it was networki
 
 Later I understood that it was because of MSSQL server's resource issue.
 
-So I launched an ec2 instance on AWS (t3a.2xlarge - 8vCPU's and 16GB RAM, but I think t3a.xlarge will be  enough with 4vCPU's and 8 GB RAM)
+So I launched an ec2 instance on AWS (t3a.2xlarge - 8vCPU's and 32GB RAM, but I think t3a.xlarge will be  enough with 4vCPU's and 16 GB RAM)
 If you work on an ec2 instance don't forget to change localhost with the IP address of ec2 instance on PHP file "<private const host = 'localhost';> "
 
 # Task
