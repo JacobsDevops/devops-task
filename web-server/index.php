@@ -7,11 +7,14 @@ final class QuickDbTest
     private const db = 'db_vero_digital';
     private const user = 'sa';
     private const pass = 'Un!q@to2023';
+    #private const port = '1433';
 
     private function connectToDatabase() {
         try {
-            $dsn = "sqlsrv:server=".self::host.";Database=".self::db;
-            $connection = new PDO($dsn, self::user, self::pass);
+            $dsn = "sqlsrv:Server=localhost;Database=db_vero_digital;Encrypt=no;TrustServerCertificate=yes;LoginTimeout=45";
+            #$dsn = "sqlsrv:Server=".self::host.";""Database=".self::db;
+            #$dsn = "sqlsrv:Server=tcp:localhost,1433;Database=db_vero_digital;Encrypt=no;TrustServerCertificate=yes";       
+            $connection = new PDO($dsn, "sa", "Un!q@to2023");
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         }
