@@ -1,13 +1,10 @@
-Hello dear DevOps prospect!
-
-This repository is supposed to act as a playground for your submission.
-
-Before getting started, please make sure use this repository as a **template** and create your own **public** repository, on which you will commit and push your code regularly. 
-Once you are ready, please mail us back the link to your repository. 
-
-Below, you will find the **Task** definition.
-
-Happy Hacking :computer:
+Hello
+I created 2 dockerfiles, one for MSSQL Server and second for PHP Apache Webserver. 
+To launh those servers I created a dcoker-compose file. 
+In my local computer I can not connect to db. At first I thought it was networking issue. 
+Later I understood that it was because of MSSQL server's resource issue.
+So I launched an ec2 instance on AWS (t3a.2xlarge - 8vCPU's and 16GB RAM, but I think t3a.xlarge will be  enough with 4vCPU's and 8 GB RAM)
+If you work on an ec2 instance don't forget to change localhost with the IP address of ec2 instance on PHP file "<private const host = 'localhost';> "
 
 # Task
 

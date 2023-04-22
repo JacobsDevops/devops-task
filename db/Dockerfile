@@ -17,6 +17,3 @@ RUN /opt/mssql/bin/sqlservr --accept-eula & sleep 30  && \
 # Expose port
 EXPOSE 1433
 
-#EXPOSE 1433/tcp
-
-#CMD ["/opt/mssql/bin/sqlservr"]
