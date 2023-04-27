@@ -31,4 +31,4 @@ Write a Dockerfile for the following tasks
 
 ## Launcher
 
-Write a launcher, which builds and starts both containers (can be shell scripting or docker-compose)
+Write a launcher, which builds and starts both containers (can be shell scripting or docker-compose).

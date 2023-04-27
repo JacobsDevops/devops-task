@@ -27,5 +27,5 @@ COPY ./index.php /var/www/html/
 
 
 
-# Expose port 80 for HTTP traffic
+# Expose port 8000 for HTTP traffic
 EXPOSE 8000
